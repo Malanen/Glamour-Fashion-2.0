@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glamour Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <!-- https://xstore.8theme.com/demos/hosting/-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+    
+    <script>
+    function myFunction() {
+  let div = document.getElementById("video1");
+  let rect = div.getBoundingClientRect();
+  x = rect.left;
+  y = rect.top;
+  w = rect.width;
+  h = rect.height;
+  b = rect.bottom;
+  alert ("Left: " + x + ", Top: " + y + ", Width: " + w + ", Height: " + h+ ", Bottom: " + b);
+}
+    </script>
+
+
+
+
+</head>
+
+
+
+<header>
+    
+    <div id="navbar">
+    <img class="logo" src="images/1929986_785490088263291_177844903823616656_n.jpg" alt="glamour logo">
+        <nav>
+        <ul class="nav_links">
+            <li><a href="#">FORSIDE</a></li>
+            <li><a href="#om">OM OS</a></li>
+            <li><a href="#video1">HISTORIEN</a></li>
+            <li><a href="#map">FIND VEJ</a></li>
+            <li><a href="#bryllup">SKAL DU GIFTES?</a></li>
+            </ul>
+        </nav>
+        
+    
+    </div>
+    
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="/images/introvideo.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">Kom forbi i dag</h1>
+                <p class="lead mb-0">Vi har alt fra Brudekjoler til Hijabs!</p>
+                <button type="button" class="btn btn-light ">Læs mere her</button>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<body>
+    <section>
+
+        <div id="theloops">
+            <div class="row">
+                <div class="column">
+                    <img src="/images/dametoj.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="/images/brudekjole.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="/images/torklaede.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="/images/hijabi.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext"></div>
+                        <video playsinline="playsinline" autoplay="autoplay" controls>
+                            <source src="/images/kollektion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext"></div>
+                        <video playsinline="playsinline" autoplay controls>
+                            <source src="/images/brudekjoler.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext"></div>
+                        <video playsinline="playsinline" autoplay controls>
+                            <source src="/images/kollektion.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext"></div>
+                        <video playsinline="playsinline" autoplay controls>
+                            <source src="/images/brudekjoler.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    
+    
+    
+    <main class="content">
+
+            <section id="om">
+                <div id="flex-om-os">
+                    <div id="om-os">
+                        <h2>Glamour Fashion</h2>
+                        <p>Glamour fashion er en butik, der byder velkommen til alle og enhver. Vi tilbyder forskellige udvalg af tøj og kjoler. Alt fra langtærmet og tildækket trøjer til lidt mere moderne mode. 
+Vi prøver altid at yde det bedste service til vores kunder. Det gøre vi ved at bla. vejlede kunderne så det kan give dem et godt indtryk af hvem Glamour Fashion er. 
+Kvalitet er første prioritet hos os og det kan ses på vores brudekjoler.</p>
+                    </div>
+                    <div id="om billede">
+                        <img src="images/om.jpg" id=om-billede>
+                    </div>
+                </div>
+            </section>
+
+
+<audio id="background_sound1"> <source src="/images/castle.mp3" type="audio/mp3"> </audio>
+          
+           <section id="video1">
+                <video autoplay muted loop>
+                    <source src="images/HISTORIE.mp4" type="video/mp4">
+                    
+                </video>
+            </section>
+            <div id="push">
+          
+            </div>
+            <section id="half-cut">
+                <h5>"Glamour Fashion var det helt rigtige valg for mig, da jeg skulle finde kjole til mit bryllup."</h5>
+                <div class="button">
+                    
+
+                </div>
+                
+
+            </section>
+        <section id="map">
+            <video autoplay muted loop id="mapbackground">
+  <source src="images/Kollektion%20-%20Alm%20T%C3%B8j%20og%20tilbeh%C3%B8r.mp4" type="video/mp4">  
+            </video>
+             <div id="kortbox">
+               <img src="images/kort.png" id="kort">
+           </div>
+        </section>
+
+
+
+
+        </main><!-- .content -->
+    
+    
+    
+    <div class="bryllup">
+        <div class="start"><img src="images/hijpic1.png" alt="hijab"></div>
+        <div class="tekst">
+            <h1>Gør din dag til noget særligt!</h1>
+            <h2 style="font-size: 20px; color: dimgray;">Vi har nogle udvalgte brudekjoler, der passer enhver stil. I fælleskab kan vi gøre dine drømme til virkelighed.</h2>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6 class="text-justify1"> Åbningstider: mandag - lukket</h6>
+                    <h6 class="text-justify2">Tirsdag-Fredag: 10.00 - 18.00 </h6>
+                    <h6 class="text-justify3">Lørdag og Søndag: 10.30 - 18.00 </h6>
+                    <h6 class="text-justify4">Tlf nr: 42 76 79 15 </h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/rellax.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
